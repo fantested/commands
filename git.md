@@ -40,7 +40,7 @@
 ## Undo
 |command|description|example|
 |-------|-----------|-------|
-|git diff /<file/>|Show the changes made to a file|git diff test-file|
+|git diff \<file\>|Show the changes made to a file|git diff test-file|
 |git checkout -- \<file\>|Discard changes in the target file|git checkout -- test-file|
 |git reset HEAD \<file\>|Unstage changes in a file|git reset HEAD test-file|
 
