@@ -15,8 +15,14 @@
 |-------|-----------|-------|
 |git status|Show all changes|git status|
 |git add \<file\>|Add changes in a file to staging|git add test-file|
-|git add *|Add all changes to staging|git add *|
+|git add \*|Add all changes to staging|git add \*|
 |git commit -m \<message\>|Commit staged changes|git commit -m "test message"|
+
+## Display
+|command|description|example|
+|-------|-----------|-------|
+|git show \<object\>|Show various types of objects|git show commit-id|
+|git diff \<file\>|Show the changes made to a file|git diff test-file|
 
 ## Branch
 |command|description|example|
@@ -40,9 +46,10 @@
 ## Undo
 |command|description|example|
 |-------|-----------|-------|
-|git diff \<file\>|Show the changes made to a file|git diff test-file|
 |git checkout -- \<file\>|Discard changes in the target file|git checkout -- test-file|
 |git reset HEAD \<file\>|Unstage changes in a file|git reset HEAD test-file|
+|git revert \<commit\>|Revert some existing commits|git revert HEAD~3|
+|git cherry-pick \<commit\>|Apply the changes introduced by some existing commits|git cherry-pick commit-id|
 
 ## Log
 |command|description|example|
