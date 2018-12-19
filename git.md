@@ -10,20 +10,6 @@
 |git remote rm \<name\>|Remove the connection to the remote repo|git remote rm origin|
 |git remote rename \<old-name\> \<new-name\>|Rename a remote connection|git remote rename origin-old origin-new|
 
-## Basic Operations
-|command|description|example|
-|-------|-----------|-------|
-|git status|Show all changes|git status|
-|git add \<file\>|Add changes in a file to staging|git add test-file|
-|git add \*|Add all changes to staging|git add \*|
-|git commit -m \<message\>|Commit staged changes|git commit -m "test message"|
-
-## Display
-|command|description|example|
-|-------|-----------|-------|
-|git show \<object\>|Show various types of objects|git show commit-id|
-|git diff \<file\>|Show the changes made to a file|git diff test-file|
-
 ## Branch
 |command|description|example|
 |-------|-----------|-------|
@@ -33,15 +19,13 @@
 |git checkout \<branch\>|Switch to a branch|git checkout test-branch|
 |git checkout -b \<new-branch\> \<base-branch\>|Create a new branch off the base branch|git checkout -b test-branch master|
 
-## Syncing
+## Commit
 |command|description|example|
 |-------|-----------|-------|
-|git fetch \<remote\> \<branch\>|Download from a branch|git fetch origin master|
-|git pull \<remote\>|git fetch + git merge|git pull origin|
+|git add \<file\>|Add changes in a file to staging|git add test-file|
+|git commit -m \<message\>|Commit staged changes|git commit -m "test message"|
 |git push \<remote\> \<branch-name\>|Push code to remote server. Create one if none exist|git push origin master|
 |git push -u \<remote\> \<branch-name\>|Add upstream (tracking) reference to local branch. You can use git pull without any arguments after this|git push -u origin master|
-|git merge \<branch\>|Merge a branch into the working branch|git merge master|
-|git rebase \<upstream\> \<branch\>|Change the base of your branch to the head of upstream|git rebase master test-branch|
 
 ## Undo
 |command|description|example|
@@ -54,11 +38,23 @@
 |git revert \<commit\>|Create a new commit which inverses the specified commit|git revert HEAD~3|
 |git cherry-pick \<commit\>|Apply the changes introduced by the specified commit|git cherry-pick HEAD~3|
 
-## Log
+## Display
 |command|description|example|
 |-------|-----------|-------|
+|git status|Show all changes|git status|
+|git show \<object\>|Show various types of objects|git show commit-id|
+|git diff \<file\>|Show the changes made to a file|git diff test-file|
 |git log \<remote\> \<branch\>|Show the history of commits|git log origin master|
 |git log \<remote\> \<branch\> --all --decorate --oneline --graph|Include a readable graph|git log origin master --all --decorate --oneline --graph|
+|git --version|Check the version of your git|git --version|
+
+## Syncing
+|command|description|example|
+|-------|-----------|-------|
+|git fetch \<remote\> \<branch\>|Download from a branch|git fetch origin master|
+|git pull \<remote\>|git fetch + git merge|git pull origin|
+|git merge \<branch\>|Merge a branch into the working branch|git merge master|
+|git rebase \<upstream\> \<branch\>|Change the base of your branch to the head of upstream|git rebase master test-branch|
 
 ## Stash
 |command|description|example|
@@ -69,11 +65,6 @@
 |git stash apply \<stash\>|Apply a stash and keep the stash|git stash apply test-stash|
 |git stash pop \<stash\>|Apply a stash and drop the stash|git stash pop test-stash|
 |git stash drop \<stash\>|Remove a stash|git stash drop test-stash|
-
-## Other
-|command|description|example|
-|-------|-----------|-------|
-|git --version|Check the version of your git|git --version|
 
 ## Symbol
 |command|description|example|
