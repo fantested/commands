@@ -46,10 +46,12 @@
 ## Undo
 |command|description|example|
 |-------|-----------|-------|
-|git checkout -- \<file\>|Discard changes in the target file|git checkout -- test-file|
+|git checkout -- \<file\>|Discard changes in a file from the working directory|git checkout -- test-file|
 |git reset HEAD \<file\>|Unstage changes in a file|git reset HEAD test-file|
-|git revert \<commit\>|Revert some existing commits|git revert HEAD~3|
-|git cherry-pick \<commit\>|Apply the changes introduced by some existing commits|git cherry-pick commit-id|
+|git reset HEAD --hard \<file\>|Discard changes in a file from both the staged snapshot and working directory|git reset HEAD --hard test-file|
+|git reset HEAD~1|Remove the latest commit from the current branch|git reset HEAD~1|
+|git revert \<commit\>|Create a new commit which inverses the specified commit|git revert HEAD~3|
+|git cherry-pick \<commit\>|Apply the changes introduced by the specified commit|git cherry-pick HEAD~3|
 
 ## Log
 |command|description|example|
@@ -71,3 +73,11 @@
 |command|description|example|
 |-------|-----------|-------|
 |git --version|Check the version of your git|git --version|
+
+## Symbol
+|command|description|example|
+|-------|-----------|-------|
+|\~\[\~\]|Move up len(\~) levels in the hierarchy, via the first parent if a commit has more than one parent|git reset HEAD\~\~|
+|\~\[n\]|Move up n levels in the hierarchy, via the first parent if a commit has more than one parent|git reset HEAD\~2|
+|\^\[\^\]|Move up len(\^) levels in the hierarchy, via the first parent if a commit has more than one parent|git reset HEAD\^\^|
+|\^\[n\]|Move up to the n\'th parent when a commit has more than one parent|git reset HEAD\^2|
