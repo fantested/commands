@@ -55,7 +55,7 @@
 |command|description|example|
 |-------|-----------|-------|
 |git log \<remote\> \<branch\>|Show the history of commits|git log origin master|
-|git log \<remote\> \<branch\> --graph|Include graph|git log origin master --graph|
+|git log \<remote\> \<branch\> --all --decorate --oneline --graph|Include a readable graph|git log origin master --all --decorate --oneline --graph|
 
 ## Stash
 |command|description|example|
