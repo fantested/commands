@@ -47,6 +47,7 @@
 |command|description|example|
 |-------|-----------|-------|
 |git checkout -- \<file\>|Discard changes in a file from the working directory|git checkout -- test-file|
+|git clean -i \<path\>|Remove local untracked files|git clean -i test-path|
 |git reset HEAD \<file\>|Unstage changes in a file|git reset HEAD test-file|
 |git reset HEAD --hard \<file\>|Discard changes in a file from both the staged snapshot and working directory|git reset HEAD --hard test-file|
 |git reset HEAD~1|Remove the latest commit from the current branch|git reset HEAD~1|
