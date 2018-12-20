@@ -16,6 +16,7 @@
 |git branch|List local branches|git branch|
 |git branch -a|List both local and remote branches|git branch -a|
 |git branch -d \<branch\>|Delete a local branch|git branch -d test-branch|
+|git push --delete <remote_name> <branch_name>|Delete a remote branch|git push --delete origin test-branch|
 |git checkout \<branch\>|Switch to a branch|git checkout test-branch|
 |git checkout -b \<new-branch\> \<base-branch\>|Create a new branch off the base branch|git checkout -b test-branch master|
 
@@ -52,6 +53,7 @@
 |command|description|example|
 |-------|-----------|-------|
 |git fetch \<remote\> \<branch\>|Download from a branch|git fetch origin master|
+|git fetch -p \<remote\>|Prune local "cache" of remote branches|git fetch -p origin|
 |git pull \<remote\>|git fetch + git merge|git pull origin|
 |git merge \<branch\>|Merge a branch into the working branch|git merge master|
 |git rebase \<upstream\> \<branch\>|Change the base of your branch to the head of upstream|git rebase master test-branch|
