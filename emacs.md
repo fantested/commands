@@ -1,4 +1,4 @@
-c: Ctrl+
+c: Ctrl+  
 m: Meta+
 
 ## Traverse
@@ -13,3 +13,21 @@ m: Meta+
 |m-<, m->|Move to the beginning/end of a document|
 |c-u n c-n|Custom: Move forward by n lines|
 |c-u n c-f|Custom: Move forward by n characters|
+
+## Delete
+|command|description|
+|-------|-----------|
+|c-w|Delete a document|
+|c-d|Delete a character|
+|m-d|Delete a word|
+|c-k|Delete a line|
+|m-k|Delete a sentence|
+
+## Buffer
+|command|description|
+|-------|-----------|
+
+## Window
+|command|description|
+|-------|-----------|
+|c-x 1|Kill a window|
