@@ -82,6 +82,8 @@ M-key: Meta+key
 |m-x recover-this-file|Recover a file|
 
 ## Exit
+|command|description|
+|-------|-----------|
 |C-g|Exit command|
 |C-z|Suspend/minimize emacs|
 |C-x C-x|Save buffers and kill emacs|
