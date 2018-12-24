@@ -26,6 +26,7 @@ M-key: Meta+key
 |M-<, M->|Move cursor to beginning/end-of-document|
 |C-right, C-left|Move cursor forward/backward by a word|
 |C-down, C-up|Move cursor forward/backward by a paragraph|
+|C-l|Center screen on current line|
 
 ## Edit
 |command|description|
@@ -39,7 +40,7 @@ M-key: Meta+key
 |C-y|Paste|
 |M-w|Copy|
 |M-q|Wrap text|
-|C-/, C-x u|Undo|
+|C-/, C-_, C-x u|Undo|
 
 ## Buffer
 |command|description|
@@ -81,6 +82,6 @@ M-key: Meta+key
 |m-x recover-this-file|Recover a file|
 
 ## Exit
-|C-g|Exit command mode|
-|C-z|Exit emacs temporarily|
+|C-g|Exit command|
+|C-z|Suspend/minimize emacs|
 |C-x C-x|Save buffers and kill emacs|
