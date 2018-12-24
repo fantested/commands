@@ -1,37 +1,50 @@
-# Basic commands for emacs
+# Basic emacs commands
 C-key: Ctrl+key  
 M-key: Meta+key
+
+## Help
+|command|description|
+|-------|-----------|
+|C-h C-h|Help|
+
+## File
+|command|description|
+|-------|-----------|
+|C-x C-f|Find file|
+|C-x C-s|Save file|
+|C-x C-w|Write file as|
 
 ## Traverse
 |command|description|
 |-------|-----------|
-|C-v, M-v|Move forward/backward by a screen|
-|C-n, C-p|Move forward/backward by a line|
-|M-f, M-b|Move forward/backward by a word|
-|C-f, C-b|Move forward/backward by a character|
-|C-a, C-e|Move to the beginning/end of a line|
-|M-a, M-e|Move to the beginning/end of a sentence|
-|M-<, M->|Move to the beginning/end of a document|
-|C-u n C-n|Custom: Move forward by n lines|
-|C-u n C-f|Custom: Move forward by n characters|
+|C-v, M-v|Move cursor forward/backward by a screen|
+|C-n, C-p|Move cursor forward/backward by a line|
+|M-f, M-b|Move cursor forward/backward by a word|
+|C-f, C-b|Move cursor forward/backward by a character|
+|C-a, C-e|Move cursor to beginning/end-of-line|
+|M-a, M-e|Move cursor to beginning/end-of-sentence|
+|M-<, M->|Move cursor to beginning/end-of-document|
+|C-right, C-left|Move cursor forward/backward by a word|
+|C-down, C-up|Move cursor forward/backward by a paragraph|
 
-## Delete
+## Edit
 |command|description|
 |-------|-----------|
-|C-w|Delete a document|
 |C-d|Delete a character|
 |M-d|Delete a word|
 |C-k|Delete a line|
 |M-k|Delete a sentence|
-
-## Undo
-|command|description|
-|-------|-----------|
-|C-g|Exit command mode|
+|C-@|Mark the beginning of a region|
+|C-w|Cut|
+|C-y|Paste|
+|M-w|Copy|
+|M-q|Wrap text|
+|C-/, C-x u|Undo|
 
 ## Buffer
 |command|description|
 |-------|-----------|
+|C-x C-b|List all buffers|
 |C-x b|Switch to buffer|
 |C-x s|Save buffer|
 |C-x k|Kill buffer|
@@ -46,15 +59,28 @@ M-key: Meta+key
 |C-x 2|Split the active window into two windows horizontally|
 |C-x 3|Split the active window into two windows vertically|
 |C-x o|Switch active window to next window|
+|C-x 4 C-f|Find file in other window|
 
-## File
+## Search & Replace
 |command|description|
 |-------|-----------|
-|C-x C-f|Open file|
-|C-x C-s|Save file|
-|C-x C-w|Save file as|
+|C-s|Search forward|
+|C-r|Search backward|
+|M-%|Query replace|
 
-## Help
+## Universal Argument
 |command|description|
 |-------|-----------|
-|C-h C-h|Help|
+|C-u n C-n|Move cursor forward by n lines|
+|C-u n C-f|Move cursor forward by n characters|
+
+## Extended Command
+|command|description|
+|-------|-----------|
+|m-x replace-string|Replace string|
+|m-x recover-this-file|Recover a file|
+
+## Exit
+|C-g|Exit command mode|
+|C-z|Exit emacs temporarily|
+|C-x C-x|Save buffers and kill emacs|
