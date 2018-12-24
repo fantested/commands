@@ -1,5 +1,6 @@
-c: Ctrl+  
-m: Meta+
+# Basic commands for emacs
+c-key: Ctrl+key  
+m-key: Meta+key
 
 ## Traverse
 |command|description|
