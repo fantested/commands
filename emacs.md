@@ -1,6 +1,6 @@
 # Basic emacs commands
 C-key: Ctrl+key  
-M-key: Meta+key
+M-key: Meta(Alt|Esc|Option)+key
 
 ## Help
 |command|description|
