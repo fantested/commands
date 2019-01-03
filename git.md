@@ -49,7 +49,8 @@
 |-------|-----------|-------|
 |git status|Show all changes|git status|
 |git show \<object\>|Show various types of objects|git show commit-id|
-|git diff \<file\>|Show the changes made to a file|git diff test-file|
+|git diff \<file\>|Show changes|git diff test-file|
+|git difftool \<file\>|Show changes using difftool|git difftool test-file|
 |git log \<remote\> \<branch\>|Show the history of commits|git log origin master|
 |git log \<remote\> \<branch\> --all --decorate --oneline --graph|Include a readable graph|git log origin master --all --decorate --oneline --graph|
 |git --version|Check the version of your git|git --version|
