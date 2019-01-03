@@ -5,6 +5,9 @@
 |-------|-----------|-------|
 |git config --global user.name \<username\>|Specify the username of your profile|git config --global user.name "test-user"|
 |git config --global user.email \<email\>|Specify the email of your profile|git config --global user.email "test-user@test.com"|
+|git config --global diff.tool \<tool-name\>|Set default diff tool|git config --global diff.tool vimdiff|
+|git config --global merge.tool \<tool-name\>|Set default merge tool|git config --global merge.tool vimdiff|
+|git config --global --add difftool.prompt <true\|false>|Enable/disable difftool prompt|git config --global --add difftool.prompt false|
 |git init|Create a local repo|git init|
 |git clone \<path\>|Create a local copy of the target repo|git clone http://test.com/test.git|
 |git remote -v|List remote connections|git remote -v|
