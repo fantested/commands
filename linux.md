@@ -3,7 +3,7 @@
 ## File
 |command|description|
 |-------|-----------|
-|ln -s <source> <target>|Create a symbolic link|
+|ln -s \<source\> \<target\>|Create a symbolic link|
 
 ## Process
 |command|description|
