@@ -1,5 +1,10 @@
 # Basic commands for Linux
 
+## File
+|command|description|
+|-------|-----------|
+|ln -s <source> <target>|Create a symbolic link|
+
 ## Process
 |command|description|
 |-------|-----------|
