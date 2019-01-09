@@ -4,7 +4,7 @@
 |command|description|
 |-------|-----------|
 |ps -aux|Show all processes|
-|kill <pid>|Kill a process|
+|kill \<pid\>|Kill a process|
 
 ## Network
 |command|description|
