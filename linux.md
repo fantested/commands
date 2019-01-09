@@ -1,6 +1,11 @@
 # Basic commands for Linux
 
+## Process
+|command|description|
+|-------|-----------|
+|ps -aux|Show all processes|
+
 ## Network
 |command|description|
 |-------|-----------|
-|netstat -tulpn|See open ports|
+|netstat -tulpn|Show all open ports|
