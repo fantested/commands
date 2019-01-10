@@ -14,6 +14,7 @@
 ## Process
 |command|description|
 |-------|-----------|
+|htop|Process manager|
 |ps -aux|Show all processes|
 |kill \<pid\>|Kill a process|
 
