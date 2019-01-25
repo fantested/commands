@@ -10,7 +10,8 @@ M-key: Meta(Alt|Esc|Option)+key
 ## File
 |command|description|
 |-------|-----------|
-|C-x C-f|Find file|
+|c-x d|Open directory|
+|C-x C-f|Find or create file|
 |C-x C-s|Save file|
 |C-x C-w|Write file as|
 
@@ -42,6 +43,12 @@ M-key: Meta(Alt|Esc|Option)+key
 |C-x h|Select all|
 |M-q|Wrap text|
 |C-/, C-_, C-x u|Undo|
+
+## Input/Output
+|command|description|
+|-------|-----------|
+|M-p, M-n|Previous/next input|
+|M-r|Isearch input regex backward|
 
 ## Buffer
 |command|description|
@@ -81,6 +88,7 @@ M-key: Meta(Alt|Esc|Option)+key
 |-------|-----------|
 |m-x replace-string|Replace string|
 |m-x recover-this-file|Recover a file|
+|m-x sql-ms|Open a connection to SQL server|
 
 ## Exit
 |command|description|
