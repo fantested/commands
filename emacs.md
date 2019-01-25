@@ -23,7 +23,7 @@ M-key: Meta(Alt|Esc|Option)+key
 |C-f, C-b|Move cursor forward/backward by a character|
 |C-a, C-e|Move cursor to beginning/end-of-line|
 |M-a, M-e|Move cursor to beginning/end-of-sentence|
-|M-<, M->|Move cursor to beginning/end-of-document|
+|M-<, M->|Move cursor to beginning/end-of-buffer|
 |C-right, C-left|Move cursor forward/backward by a word|
 |C-down, C-up|Move cursor forward/backward by a paragraph|
 |C-l|Center screen on current line|
@@ -39,6 +39,7 @@ M-key: Meta(Alt|Esc|Option)+key
 |C-w|Cut|
 |C-y|Paste|
 |M-w|Copy|
+|C-x h|Select all|
 |M-q|Wrap text|
 |C-/, C-_, C-x u|Undo|
 
