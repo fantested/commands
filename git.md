@@ -10,8 +10,12 @@
 |git config --global --add difftool.prompt <true\|false>|Enable/disable difftool prompt|git config --global --add difftool.prompt false|
 |git init|Create a local repo|git init|
 |git clone \<path\>|Create a local copy of the target repo|git clone http://test.com/test.git|
+
+## Remote
+|command|description|example|
+|-------|-----------|-------|
 |git remote -v|List remote connections|git remote -v|
-|git remote \<name\> \<path\>|Connect local repo to a remote repo|git remote add origin http://test.com/test.git|
+|git remote add \<name\> \<path\>|Add a remote|git remote add origin http://test.com/test.git|
 |git remote rm \<name\>|Remove the connection to the remote repo|git remote rm origin|
 |git remote rename \<old-name\> \<new-name\>|Rename a remote connection|git remote rename origin-old origin-new|
 
