@@ -77,6 +77,12 @@ M-key: Meta(Alt|Esc|Option)+key
 |C-r|Search backward|
 |M-%|Query replace|
 
+## Format
+|command|description|
+|-------|-----------|
+|C-x C-+|Zoom in|
+|C-x C--|Zoom out|
+
 ## Universal Argument
 |command|description|
 |-------|-----------|
