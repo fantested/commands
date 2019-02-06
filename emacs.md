@@ -43,6 +43,7 @@ M-key: Meta(Alt|Esc|Option)+key
 |C-x h|Select all|
 |M-q|Wrap text|
 |C-/, C-_, C-x u|Undo|
+|C-g C-/|Redo|
 
 ## Input/Output
 |command|description|
