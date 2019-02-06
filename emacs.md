@@ -44,6 +44,7 @@ M-key: Meta(Alt|Esc|Option)+key
 |M-q|Wrap text|
 |C-/, C-_, C-x u|Undo|
 |C-g C-/|Redo|
+|C-x Tab arrow-keys|Indentation|
 
 ## Input/Output
 |command|description|
