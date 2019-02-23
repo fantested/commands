@@ -1,6 +1,6 @@
 # Basic mysql commands  
 
-## Help
+## Server
 |command|description|
 |-------|-----------|
 |mysql.server start|Start service|
