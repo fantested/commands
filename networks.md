@@ -1,4 +1,5 @@
-## Branch
+## Unix-like
 |command|description|example|
 |-------|-----------|-------|
-|traceroute|Trace internet route|traceroute www.columbia.edu|
+|ifconfig|TCP/IP interface config|ifconfig|
+|traceroute|Trace internet route and measure delay|traceroute www.columbia.edu|
