@@ -79,6 +79,11 @@
 |git stash pop \<stash\>|Apply a stash and drop the stash|git stash pop test-stash|
 |git stash drop \<stash\>|Remove a stash|git stash drop test-stash|
 
+## Housekeeping
+|command|description|example|
+|-------|-----------|-------|
+|git gc|Cleanup unnecessary files and optimize the local repository|git gc|
+
 ## Symbol
 |command|description|example|
 |-------|-----------|-------|
