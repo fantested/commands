@@ -34,6 +34,7 @@
 |-------|-----------|-------|
 |git add \<file\>|Add changes in a file to staging|git add test-file|
 |git commit -m \<message\>|Commit staged changes|git commit -m "test message"|
+|git commit --amend|Change the previous commit or its message|<ul><li>git commit --amend</li><li>git commit --amend -m 'new message'</li></ul>|
 |git push \<remote\> \<branch-name\>|Push code to remote server. Create one if none exist|git push origin master|
 |git push -u \<remote\> \<branch-name\>|Add upstream (tracking) reference to local branch. You can use git pull without any arguments after this|git push -u origin master|
 
