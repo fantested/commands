@@ -47,7 +47,6 @@
 |git reset HEAD --hard \<file\>|Discard changes in a file from both the staged snapshot and working directory|git reset HEAD --hard test-file|
 |git reset HEAD~1|Remove the latest commit from the current branch|git reset HEAD~1|
 |git revert \<commit\>|Create a new commit which inverses the specified commit|git revert HEAD~3|
-|git cherry-pick \<commit\>|Apply the changes introduced by the specified commit|git cherry-pick HEAD~3|
 
 ## Display
 |command|description|example|
@@ -68,6 +67,7 @@
 |git pull \<remote\>|git fetch + git merge|git pull origin|
 |git merge \<branch\>|Merge a branch into the working branch|git merge master|
 |git rebase \<upstream\> \<branch\>|Change the base of your branch to the head of upstream|git rebase master test-branch|
+|git cherry-pick \<commit\>|Apply the changes introduced by the specified commit|git cherry-pick HEAD~3|
 
 ## Stash
 |command|description|example|
