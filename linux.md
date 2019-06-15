@@ -1,5 +1,10 @@
 # Basic commands for Linux
 
+## Help
+|command|description|
+|-------|-----------|
+|info \<program\>|Show documentation|info nslookup|
+
 ## File
 |command|description|
 |-------|-----------|
@@ -23,7 +28,7 @@
 |ifconfig|IP addresses and network interfaces||
 |netstat|Network connections|<ul><li>netstat -nt - list TCP connections</li><li>netstat -ntl - list TCP ports that are listening for new connections</li><li>netstat -nr - routing table</li><li>netstat -tulpn - show all open ports</li></ul>|
 |traceroute|Trace the internet route to a host|traceroute www.abc.com|
-|nslookup|DNS loopup|nslookup -query=any abc.com|
+|nslookup|DNS loopup|nslookup -q=any abc.com|
 
 ## Processes
 |command|description|Example|
