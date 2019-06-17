@@ -5,16 +5,15 @@
 |-------|-----------|
 |info \<program\>|Show documentation|info nslookup|
 
-## File
-|command|description|
-|-------|-----------|
+## File System
+|command|description|Example|
+|-------|-----------|-------|
+|chgrp [-r] \<group\> \<dir/file\>|Change dir/file group|chgrp test test.txt|
+|chown [-r] [user[:group]] \<dir/file\>|Change dir/file ownership|chown testuser:test test.txt|
+|chmod [u\|g\|o\|a][+\|-\|=][r\|w\|x] \<dir/file\>|Change dir/file permissions|<ul><li>chmod u=rwx,go=rx test.txt</li><li>chmod a+w test.txt</li></ul>|
+|chmod xyz \<dir/file\>|Change dir/file permissions using numbers (4 for read, 2 for write, 1 for execute, 0 for none)|chmod 755 test.txt|
 |ln -s \<source\> \<target\>|Create a symbolic link|
-
-## Permissions
-|command|description|
-|-------|-----------|
-|chown [user[:group]] \<file\>|Change file ownership|
-|chmod [u\|g\|o\|a][+\|-\|=][r\|w\|x] \<file\>|Change file permissions|
+|ls -alh|List all directories and files|
 
 ## Debugging
 |command|description|Example|
