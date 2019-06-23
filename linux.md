@@ -34,7 +34,9 @@
 |command|description|Example|
 |-------|-----------|-------|
 |echo \<variable\>|Show|echo $PATH|
+|gdb|GNU debugger||
 |ltrace|Print out library calls|<ul><li>ltrace ls .</li><li>ltrace -p 1234</li></ul>|
+|objdump \<file\>|Display information of object files|objdump -x -D wc|
 |strace|Print out system calls|<ul><li>strace ls .</li><li>strace -p 1234</li></ul>|
 
 ## Networking
