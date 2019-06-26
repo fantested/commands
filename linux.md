@@ -6,7 +6,7 @@
 |info \<program\>|Show documentation|info nslookup|
 |man \<program\>|Show documentation|man nslookup|
 
-## File System
+## File and Directory Management
 |command|description|Example|
 |-------|-----------|-------|
 |cd \<dir\>|Change directory|<ul><li>cd /var/</li><li>cd ~home</li></ul>|
@@ -43,6 +43,24 @@
 |nl [-bnw] \<file\>|Print and number file content||
 |tac \<file\>|Pring file content bottom up||
 |tail [-n number] \<file\>|Print bottom n lines||
+
+## File System
+|command|description|Example|
+|-------|-----------|-------|
+|blkid [device]|Print block identifier||
+|df [-ahikHTm] [dir\|file]|Display the amount of disk space available on the file system||
+|du [-ahskm] [dir\|file]|Estimate file space usage||
+|dumpe2fs [-bfhixV] device|Print the super block and blocks group information|dumpe2fs /dev/vda5|
+|fdisk [device]|MBR partition table editor||
+|gdisk [device]|Interactive GUID partition table (GPT) editor||
+|ln [-sf] \<original filename\> \<link name\>]|Create links between files||
+|lsblk [-dfimpt] [device]|List block devices||
+|mkfs.xfs [-b bsize] [-d parms] [-i parms] [-l parms] [-L label] [-f] [-r parms] [device]|Format a block storage device with a specific file system||
+|mknod device [b\|c\|p] [Major] [Minor]|Create a special file|mknod /dev/vda10 b 252 10|
+|mount [-fnrsvw] [-t fstype] [-o options] device dir|Mount a storage device|mount /dev/sr0 /data/usb|
+|umount [-fn] device\|dir|Unmount a storage device|umount /data/usb|
+|xfs_admin [-lu] [-L label] [-U uuid] device|Modify UUID or label name of a xfs formatted device||
+|xfs_repair [-fnd] [device]|Repair xfs filesystems||
 
 ## Debugging
 |command|description|Example|
