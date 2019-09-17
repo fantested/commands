@@ -6,6 +6,13 @@
 |info \<program\>|Show documentation|info nslookup|
 |man \<program\>|Show documentation|man nslookup|
 
+## Compression & Backup
+|command|description|Example|
+|-------|-----------|-------|
+|tar [-j\|-z] [ctxv] -f \<output name\> file\|dir|Compress/decompress|tar -zcv -f /root/etc.tar.gz /root/etc|
+|dump [-Suvj] [-level] [-f file] file\|dir|Create a backup file|dump -0u -f /root/boot.dump /root/boot|
+|restore [-tCir] [-f dumpfile] [-h]|Restore a backup file|restore -r -f /root/boot.dump|
+
 ## File and Directory Management
 |command|description|Example|
 |-------|-----------|-------|
